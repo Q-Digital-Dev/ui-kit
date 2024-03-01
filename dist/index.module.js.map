@@ -1,0 +1,1 @@
+{"version":3,"file":"index.module.js","sources":["../src/components/input/input.tsx"],"sourcesContent":["import { InputP } from \"./input.options\";\n\nfunction Input(p: InputP) {\n  return (\n    null\n  )\n}\n\nexport default Input"],"names":["Input","p"],"mappings":"AAEA,SAASA,EAAMC,GACb,OAGF,IAAA"}
