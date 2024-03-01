@@ -1,15 +1,19 @@
 {
   "name": "ui-kit",
-  "version": "1.0.0",        
-  "type": "module",
-  "source": "src/index.ts",            
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "unpkg": "dist/index.umd.js",
+  "version": "1.0.0",
   "scripts": {
-    "build": "microbundle --jsx --jsxFragment --generateTypes",           
-    "dev": "microbundle watch --jsx --jsxFragment --generateTypes"   
+    "build": "tsc",
+    "watch": "tsc -w"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/web/index.js",
+      "default": "./dist/web/index.js",
+      "types": "./dist/web/index.d.ts"
+    }
+  },
+  "react-native": "./dist/native/index.js",
+  "types":  "./dist/native/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Digital-Dev/ui-kit.git"
@@ -29,11 +33,15 @@
     "url": "https://github.com/Q-Digital-Dev/ui-kit/issues"
   },
   "homepage": "https://github.com/Q-Digital-Dev/ui-kit#readme",
-  "peerDependencies": {
+  "dependencies": {
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "react-native": ">=0.73"
   },
   "devDependencies": {
-    "microbundle": "^0.15.1"
+    "@tsconfig/react-native": "^3.0.3",
+    "@types/react": "^18.2.61",
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
   }
 }

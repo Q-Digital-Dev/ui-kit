@@ -1,1 +1,2 @@
-export { default as Input, InputP } from "./components/input";
+export { Input } from './web';
+export type { InputP } from './web';
