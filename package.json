@@ -4,7 +4,7 @@
   "type": "module",
   "source": "src/index.ts",            
   "main": "dist/index.js",
-  "module": "dist/index.module.js",
+  "module": "dist/index.js",
   "unpkg": "dist/index.umd.js",
   "scripts": {
     "build": "microbundle --jsx --jsxFragment --generateTypes",           
