@@ -13,7 +13,7 @@
     }
   },
   "react-native": "./dist/native/index.js",
-  "types":  "./dist/native/index.d.ts",
+  "types": "./dist/native/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Q-Digital-Dev/ui-kit.git"
@@ -33,15 +33,23 @@
     "url": "https://github.com/Q-Digital-Dev/ui-kit/issues"
   },
   "homepage": "https://github.com/Q-Digital-Dev/ui-kit#readme",
-  "dependencies": {
-    "react": ">=16",
-    "react-dom": ">=16",
-    "react-native": ">=0.73"
+  "peerDependencies": {
+    "classnames": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-native": "*",
+    "nativewind": "*"
   },
   "devDependencies": {
     "@tsconfig/react-native": "^3.0.3",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.61",
+    "classnames": "2.3.2",
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": ">=0.73",
     "tsc": "^2.0.4",
+    "nativewind": "^2.0.11",
     "typescript": "^5.3.3"
   }
 }
