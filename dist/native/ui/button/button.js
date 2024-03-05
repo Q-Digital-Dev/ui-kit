@@ -65,7 +65,7 @@ exports.Button = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var button_options_1 = require("./button.options");
-var react_native_1 = require("react-native");
+var styledComponents_1 = require("../../styledComponents");
 var classnames_1 = __importDefault(require("classnames"));
 var Button = function (_a) {
     var _this = this;
@@ -78,7 +78,7 @@ var Button = function (_a) {
             setBlocked(false);
         };
     }, [throttleRef]);
-    return ((0, jsx_runtime_1.jsxs)(react_native_1.TouchableOpacity, __assign({ activeOpacity: 0.7, className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center', {
+    return ((0, jsx_runtime_1.jsxs)(styledComponents_1.TouchableOpacity, __assign({ activeOpacity: 0.7, className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center', {
             'bg-brand border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
             'border border-solid border-gray-300': buttonTheme === button_options_1.ButtonTheme.BORDERED,
             'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
@@ -104,9 +104,9 @@ var Button = function (_a) {
                         return [2 /*return*/];
                 }
             });
-        }); }, disabled: disabled || forceShowPreloader }, p, { children: [((showPreloader && isBlocked && showPreloader !== 'opacity') || forceShowPreloader) && ((0, jsx_runtime_1.jsx)(react_native_1.View, { className: (0, classnames_1.default)("mr-2", {
+        }); }, disabled: disabled || forceShowPreloader }, p, { children: [((showPreloader && isBlocked && showPreloader !== 'opacity') || forceShowPreloader) && ((0, jsx_runtime_1.jsx)(styledComponents_1.View, { className: (0, classnames_1.default)("mr-2", {
                     'absolute w-full h-full left-0 top-0 justify-center items-center mr-0 z-20': showPreloader === 'center'
-                }), children: (0, jsx_runtime_1.jsx)(react_native_1.ActivityIndicator, { color: buttonTheme === button_options_1.ButtonTheme.BASE ? 'white' : 'black' }) })), title ? ((0, jsx_runtime_1.jsx)(react_native_1.Text, __assign({ className: (0, classnames_1.default)('text-base text-center font-bold', {
+                }), children: (0, jsx_runtime_1.jsx)(styledComponents_1.ActivityIndicator, { color: buttonTheme === button_options_1.ButtonTheme.BASE ? 'white' : 'black' }) })), title ? ((0, jsx_runtime_1.jsx)(styledComponents_1.Text, __assign({ className: (0, classnames_1.default)('text-base text-center font-bold', {
                     'text-white': buttonTheme === button_options_1.ButtonTheme.BASE,
                     'text-black': buttonTheme === button_options_1.ButtonTheme.BORDERED || buttonTheme === button_options_1.ButtonTheme.EMPTY,
                 }, titleClassName) }, titleProps, { children: title }))) : (children)] })));

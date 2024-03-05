@@ -24,7 +24,7 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
-var react_native_1 = require("react-native");
+var styledComponents_1 = require("../../../styledComponents");
 exports.default = (0, react_1.forwardRef)(function (_a, ref) {
     var setClearState = _a.setClearState, onChangeText = _a.onChangeText, p = __rest(_a, ["setClearState", "onChangeText"]);
     var valueRef = (0, react_1.useRef)('');
@@ -45,5 +45,5 @@ exports.default = (0, react_1.forwardRef)(function (_a, ref) {
             onChangeTextHandler(value);
         },
     }); }, [inputRef, onChangeText, valueRef]);
-    return ((0, jsx_runtime_1.jsx)(react_native_1.TextInput, __assign({ ref: inputRef, onChangeText: onChangeTextHandler }, p)));
+    return ((0, jsx_runtime_1.jsx)(styledComponents_1.TextInput, __assign({ ref: inputRef, onChangeText: onChangeTextHandler }, p)));
 });

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ButtonP, ButtonTheme } from './button.options'
-import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native'
+import { ActivityIndicator, Text, TouchableOpacity, View } from '../../styledComponents'
 import classNames from 'classnames'
 
 export const Button = function ({

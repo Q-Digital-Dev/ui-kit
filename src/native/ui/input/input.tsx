@@ -6,7 +6,7 @@ import React, {
   useState,
 } from 'react'
 import { InputP, InputRef } from './input.options'
-import { Text, TouchableOpacity, View } from 'react-native'
+import { View, TouchableOpacity, Text } from '../../styledComponents'
 import classNames from 'classnames'
 import Times from './assets/times.svg'
 import InputLegacy from './ui/input.legacy'

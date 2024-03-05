@@ -1,3 +1,4 @@
+/// <reference types="react" />
 export type ButtonP = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
     onClick?(e: React.MouseEvent<HTMLDivElement, MouseEvent>): Promise<void> | void;
     throttleTime?: number;

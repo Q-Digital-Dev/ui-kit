@@ -1,11 +1,12 @@
 import React, { forwardRef, useImperativeHandle, useRef } from "react";
-import { TextInput } from "react-native";
 import { InputRef } from "../input.options";
 import { InputLegacyP } from "./input.ui.options";
+import { TextInput } from '../../../styledComponents'
+import RN from 'react-native'
 
 export default forwardRef<InputRef, InputLegacyP>(function ({ setClearState, onChangeText, ...p }, ref) {
   const valueRef = useRef('')
-  const inputRef = useRef<TextInput>(null)
+  const inputRef = useRef<RN.TextInput>(null)
 
   function onChangeTextHandler(value: string) {
     setClearState(Boolean(value))
@@ -22,7 +23,7 @@ export default forwardRef<InputRef, InputLegacyP>(function ({ setClearState, onC
     change(value) {
       onChangeTextHandler(value)
     },
-  }), [inputRef,  onChangeText, valueRef])
+  }), [inputRef, onChangeText, valueRef])
 
   return (
     <TextInput

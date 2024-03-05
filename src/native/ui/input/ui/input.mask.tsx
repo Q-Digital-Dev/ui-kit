@@ -1,11 +1,12 @@
 import React, { forwardRef, useImperativeHandle, useRef, useState } from "react";
-import { TextInput } from "react-native";
-import MaskInput, { formatWithMask } from "react-native-mask-input";
+import { MaskInput } from '../../../styledComponents'
+import RN from 'react-native'
+import { formatWithMask } from "react-native-mask-input";
 import { InputRef } from "../input.options";
 import { InputMaskP } from "./input.ui.options";
 
 export default forwardRef<InputRef, InputMaskP>(function ({ onChangeText, setClearState, ...p }, ref) {
-  const inputRef = useRef<TextInput>(null)
+  const inputRef = useRef<RN.TextInput>(null)
   const [values, setValues] = useState(formatWithMask({ mask: p.mask, text: p.defaultValue }))
 
   function onChangeTextHandler(masked: string, unmasked: string, obfuscated: string) {

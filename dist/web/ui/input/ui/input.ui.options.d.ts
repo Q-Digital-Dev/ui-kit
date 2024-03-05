@@ -1,3 +1,4 @@
+/// <reference types="react" />
 import { Props } from "react-input-mask";
 type InputUICommonP = {
     setClearState(state: boolean): void;
