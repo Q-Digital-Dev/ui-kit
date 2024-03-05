@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { ButtonP } from './button.options'
+import { ButtonP, ButtonTheme } from './button.options'
 import Preloader from './ui/preloader'
 import Title from './ui/title'
 import classNames from 'classnames'
 
-export const Button = function ({ onClick, children, throttleTime, showPreloader, title, colorPreloader, titleClassName, className, titleProps, disabled, ...p }: ButtonP) {
+export const Button = function ({ onClick, children, forceShowPreloader, throttleTime, showPreloader, title, buttonTheme, colorPreloader, titleClassName, className, titleProps, disabled, ...p }: ButtonP) {
   const [isBlocked, setBlocked] = useState(false)
   const throttleRef = useRef<NodeJS.Timeout>()
 
@@ -36,8 +36,10 @@ export const Button = function ({ onClick, children, throttleTime, showPreloader
 
   return (
     <div
-      className={classNames('py-2 px-4 bg-red-500 rounded flex-row flex cursor-pointer', className, {
-        'opacity-80': isBlocked || disabled
+      className={classNames('px-5 py-2 rounded-lg flex-row items-center justify-center py-2 px-4 bg-red-500 rounded flex-row flex cursor-pointer', className, {
+        'bg-brand border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
+        'border border-solid border-gray-300': buttonTheme === ButtonTheme.BORDERED,
+        'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
       })}
       {...p}
       onClick={onClickHandler}

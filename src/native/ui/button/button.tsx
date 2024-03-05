@@ -33,10 +33,8 @@ export const Button = function ({
       className={classNames(
         'px-5 py-2 rounded-lg flex-row items-center justify-center',
         {
-          'bg-brand border border-solid border-transparent':
-            buttonTheme === ButtonTheme.BASE,
-          'border border-solid border-gray-300':
-            buttonTheme === ButtonTheme.BORDERED,
+          'bg-brand border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
+          'border border-solid border-gray-300': buttonTheme === ButtonTheme.BORDERED,
           'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
         },
       )}

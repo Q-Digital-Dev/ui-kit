@@ -42,7 +42,6 @@ exports.Input = (0, react_1.forwardRef)(function Input(_a, ref) {
     var _c = (0, react_1.useState)(isPassword), isSecureTextEntry = _c[0], setIsSecureTextEntry = _c[1];
     var InputElement = (0, react_1.useMemo)(function () { return ('mask' in p ? input_mask_1.default : input_legacy_1.default); }, [p]);
     (0, react_1.useImperativeHandle)(ref, function () { return inputRef.current; }, [inputRef]);
-    console.log('props', p, containerClassName, containerStyle);
     return ((0, jsx_runtime_1.jsxs)(styledComponents_1.View, { style: containerStyle, className: containerClassName, children: [label && ((0, jsx_runtime_1.jsx)(styledComponents_1.Text, { className: "text-black font-bold mb-1 text-lg", children: label })), (0, jsx_runtime_1.jsxs)(styledComponents_1.View, { className: (0, classnames_1.default)('w-full flex-row border border-solid border-black/10 rounded-lg px-2', inputContainerClassName, {
                     'border-red-500': error,
                     'pl-0': leftElement,
