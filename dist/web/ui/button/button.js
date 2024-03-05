@@ -70,8 +70,8 @@ var title_1 = __importDefault(require("./ui/title"));
 var classnames_1 = __importDefault(require("classnames"));
 var Button = function (_a) {
     var _this = this;
-    var onClick = _a.onClick, children = _a.children, forceShowPreloader = _a.forceShowPreloader, throttleTime = _a.throttleTime, showPreloader = _a.showPreloader, title = _a.title, buttonTheme = _a.buttonTheme, colorPreloader = _a.colorPreloader, titleClassName = _a.titleClassName, className = _a.className, titleProps = _a.titleProps, disabled = _a.disabled, p = __rest(_a, ["onClick", "children", "forceShowPreloader", "throttleTime", "showPreloader", "title", "buttonTheme", "colorPreloader", "titleClassName", "className", "titleProps", "disabled"]);
-    var _b = (0, react_1.useState)(false), isBlocked = _b[0], setBlocked = _b[1];
+    var _b = _a.buttonTheme, buttonTheme = _b === void 0 ? button_options_1.ButtonTheme.BASE : _b, className = _a.className, onClick = _a.onClick, title = _a.title, children = _a.children, titleProps = _a.titleProps, disabled = _a.disabled, showPreloader = _a.showPreloader, throttleTime = _a.throttleTime, titleClassName = _a.titleClassName, colorPreloader = _a.colorPreloader, forceShowPreloader = _a.forceShowPreloader, p = __rest(_a, ["buttonTheme", "className", "onClick", "title", "children", "titleProps", "disabled", "showPreloader", "throttleTime", "titleClassName", "colorPreloader", "forceShowPreloader"]);
+    var _c = (0, react_1.useState)(false), isBlocked = _c[0], setBlocked = _c[1];
     var throttleRef = (0, react_1.useRef)();
     var onClickHandler = (0, react_1.useCallback)(function (e) { return __awaiter(_this, void 0, void 0, function () {
         return __generator(this, function (_a) {
