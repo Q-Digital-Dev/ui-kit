@@ -1,5 +1,5 @@
-export { default as Input } from './components/input/input'
-export * from './components/input/input.options'
+export * from './ui/input/input'
+export * from './ui/input/input.options'
 
-export { default as Button } from './components/button/button'
-export * from './components/button/button.options'
+export * from './ui/button/button'
+export * from './ui/button/button.options'

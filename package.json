@@ -37,16 +37,16 @@
     "@tsconfig/react-native": "3.0.3",
     "@types/node": "20.11.24",
     "@types/react": "18.2.61",
-    "tsc": "2.0.4",
-    "typescript": "5.3.3"
-  },
-  "dependencies": {
+    "@types/react-input-mask": "3.0.5",
     "classnames": "2.3.2",
     "nativewind": "2.0.11",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-input-mask": "2.0.4",
     "react-native": "0.73.5",
     "react-native-mask-input": "1.2.3",
-    "react-native-svg": "^15.0.0"
+    "react-native-svg": "15.0.0",
+    "tsc": "2.0.4",
+    "typescript": "5.3.3"
   }
 }
