@@ -25,7 +25,7 @@ export const Form = function Form<Values extends FormikValues = FormikValues>({ 
               error={settings.errors[name] as any}
               onBlur={settings.handleBlur(name) as any}
               value={settings.values[name]}
-              className={classNames(inputProps.className)}
+              className={classNames(inputProps.className, 'w-full')}
               containerClassName={classNames('mt-2', inputProps.containerClassName)}
             />
           ))}

@@ -1,6 +1,6 @@
 {
   "name": "ui-kit",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "scripts": {
     "clean": "rimraf dist/",
     "copy-files": "copyfiles -u 1 src/**/*.svg dist/",

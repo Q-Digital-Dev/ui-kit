@@ -24,6 +24,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
     containerStyle,
     containerClassName,
     leftElement,
+    className,
     rightElement,
     isShowClear,
     isPassword,
@@ -62,7 +63,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
         <View className="flex-row">{leftElement}</View>
 
         <InputElement
-          className="h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 w-full text-black bg-transparent"
+          className={classNames("h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 w-full text-black bg-transparent", className)}
           placeholderTextColor={placeholderTextColor || '#00000080'}
           ref={inputRef}
           setClearState={setClearState}

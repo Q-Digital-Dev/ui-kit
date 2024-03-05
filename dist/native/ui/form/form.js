@@ -40,7 +40,7 @@ var Form = function Form(_a) {
                     return ((0, react_1.createElement)(input_1.Input, __assign({}, inputProps, { key: name.toString(), onChangeText: function (val) {
                             settings.handleChange(name)(val);
                             onChangeText === null || onChangeText === void 0 ? void 0 : onChangeText(val);
-                        }, error: settings.errors[name], onBlur: settings.handleBlur(name), value: settings.values[name], className: (0, classnames_1.default)(inputProps.className), containerClassName: (0, classnames_1.default)('mt-2', inputProps.containerClassName) })));
+                        }, error: settings.errors[name], onBlur: settings.handleBlur(name), value: settings.values[name], className: (0, classnames_1.default)(inputProps.className, 'w-full'), containerClassName: (0, classnames_1.default)('mt-2', inputProps.containerClassName) })));
                 }), !!submitProps && ((0, jsx_runtime_1.jsx)(button_1.Button, __assign({}, submitProps, { onPress: function () { return settings.handleSubmit(); }, className: (0, classnames_1.default)(submitProps.className), disabled: !Boolean(lodash_1.default.values(settings.touched).length) || Boolean(lodash_1.default.values(settings.errors).length), forceShowPreloader: settings.isSubmitting }))), children && typeof children === 'function' ? children(settings) : children] })); } })));
 };
 exports.Form = Form;
