@@ -50,11 +50,15 @@ export const Button = function ({
 
   return (
     <div
-      className={classNames('px-5 py-2 rounded-lg flex-row items-center justify-center py-2 px-4 bg-red-500 rounded flex-row flex cursor-pointer', className, {
-        'bg-brand border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
-        'border border-solid border-gray-300': buttonTheme === ButtonTheme.BORDERED,
-        'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
-      })}
+      className={classNames(
+        'px-5 py-2 rounded-lg flex-row items-center justify-center',
+        className,
+        {
+          'bg-brand border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
+          'border border-solid border-gray-300': buttonTheme === ButtonTheme.BORDERED,
+          'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
+        },
+      )}
       {...p}
       onClick={onClickHandler}
     >

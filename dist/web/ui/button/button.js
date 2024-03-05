@@ -102,7 +102,7 @@ var Button = function (_a) {
             setBlocked(false);
         };
     }, [throttleRef]);
-    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center py-2 px-4 bg-red-500 rounded flex-row flex cursor-pointer', className, {
+    return ((0, jsx_runtime_1.jsx)("div", __assign({ className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center', className, {
             'bg-brand border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
             'border border-solid border-gray-300': buttonTheme === button_options_1.ButtonTheme.BORDERED,
             'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
