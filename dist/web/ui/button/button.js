@@ -103,7 +103,7 @@ var Button = function (_a) {
         };
     }, [throttleRef]);
     return ((0, jsx_runtime_1.jsx)("div", __assign({ className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center', className, {
-            'bg-brand border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
+            'bg-red-500 border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
             'border border-solid border-gray-300': buttonTheme === button_options_1.ButtonTheme.BORDERED,
             'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
         }) }, p, { onClick: onClickHandler, children: (0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(preloader_1.default, { isBlocked: isBlocked, showPreloader: showPreloader, colorPreloader: colorPreloader }), title ? ((0, jsx_runtime_1.jsx)(title_1.default, __assign({ titleClassName: titleClassName }, titleProps, { title: title }))) : children] }) })));

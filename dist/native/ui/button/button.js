@@ -79,7 +79,7 @@ var Button = function (_a) {
         };
     }, [throttleRef]);
     return ((0, jsx_runtime_1.jsxs)(styledComponents_1.TouchableOpacity, __assign({ activeOpacity: 0.7, className: (0, classnames_1.default)('px-5 py-2 rounded-lg flex-row items-center justify-center', {
-            'bg-brand border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
+            'bg-red-500 border border-solid border-transparent': buttonTheme === button_options_1.ButtonTheme.BASE,
             'border border-solid border-gray-300': buttonTheme === button_options_1.ButtonTheme.BORDERED,
             'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
         }), onPress: function (e) { return __awaiter(_this, void 0, void 0, function () {

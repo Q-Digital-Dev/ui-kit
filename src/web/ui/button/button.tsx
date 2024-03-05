@@ -54,7 +54,7 @@ export const Button = function ({
         'px-5 py-2 rounded-lg flex-row items-center justify-center',
         className,
         {
-          'bg-brand border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
+          'bg-red-500 border border-solid border-transparent': buttonTheme === ButtonTheme.BASE,
           'border border-solid border-gray-300': buttonTheme === ButtonTheme.BORDERED,
           'opacity-50': disabled || (showPreloader === 'opacity' && isBlocked) || forceShowPreloader,
         },
