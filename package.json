@@ -1,6 +1,6 @@
 {
   "name": "ui-kit",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "clean": "rimraf dist/",
     "copy-files": "copyfiles -u 1 src/**/*.svg dist/",
@@ -52,5 +52,10 @@
     "rimraf": "5.0.5",
     "tsc": "2.0.4",
     "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.202",
+    "formik": "^2.4.5",
+    "lodash": "^4.17.21"
   }
 }
