@@ -1,7 +1,6 @@
 import React, { forwardRef, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { InputP, InputRef } from "./input.options";
 import classNames from "classnames";
-import Times from './assets/times.svg'
 import InputLegacy from './ui/input.legacy'
 import InputMask from './ui/input.mask'
 
