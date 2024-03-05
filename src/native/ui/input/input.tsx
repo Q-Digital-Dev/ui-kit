@@ -6,13 +6,13 @@ import React, {
   useState,
 } from 'react'
 import { InputP, InputRef } from './input.options'
-import { Image, Text, TouchableOpacity, View } from 'react-native'
+import { Text, TouchableOpacity, View } from 'react-native'
 import classNames from 'classnames'
-import Times from './assets/times.png'
+import Times from './assets/times.svg'
 import InputLegacy from './ui/input.legacy'
 import InputMask from './ui/input.mask'
-import ClosedEye from './assets/closedEye.png'
-import OpenedEye from './assets/openedEye.png'
+import ClosedEye from './assets/closedEye.svg'
+import OpenedEye from './assets/openedEye.svg'
 
 export const Input = forwardRef<InputRef, InputP>(function Input(
   {
@@ -78,7 +78,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
                 inputRef.current?.change('')
               }}
             >
-              <Image src={Times} />
+              <Times />
             </TouchableOpacity>
           )}
           {isPassword && (
@@ -86,7 +86,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
               className="px-2 py-1 justify-center items-center"
               onPress={() => setIsSecureTextEntry(!isSecureTextEntry)}
             >
-              {isSecureTextEntry ? <Image src={ClosedEye} /> : <Image src={OpenedEye} />}
+              {isSecureTextEntry ? <ClosedEye /> : <OpenedEye />}
             </TouchableOpacity>
           )}
 
