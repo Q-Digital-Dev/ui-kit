@@ -62,7 +62,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
         <View className="flex-row">{leftElement}</View>
 
         <InputElement
-          className="h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 text-black bg-transparent"
+          className="h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 w-full text-black bg-transparent"
           placeholderTextColor={placeholderTextColor || '#00000080'}
           ref={inputRef}
           setClearState={setClearState}

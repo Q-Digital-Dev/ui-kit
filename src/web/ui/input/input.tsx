@@ -36,7 +36,7 @@ export const Input = forwardRef<InputRef, InputP>(function Input({
         </div>
 
         <InputElement
-          className='h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 text-black bg-transparent outline-none'
+          className='h-10 flex-1 p-0 py-0 pb-0 pt-0 text-base leading-5 w-full text-black bg-transparent outline-none'
           ref={inputRef}
           setClearState={setClearState}
           {...p as any}
