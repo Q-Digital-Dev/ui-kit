@@ -89,5 +89,3 @@ export const Button = function ({
     </TouchableOpacity>
   )
 }
-
-export default Button

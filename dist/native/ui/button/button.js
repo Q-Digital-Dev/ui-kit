@@ -61,12 +61,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Button = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var button_options_1 = require("./button.options");
 var react_native_1 = require("react-native");
 var classnames_1 = __importDefault(require("classnames"));
-function Button(_a) {
+var Button = function (_a) {
     var _this = this;
     var _b = _a.buttonTheme, buttonTheme = _b === void 0 ? button_options_1.ButtonTheme.BASE : _b, className = _a.className, onPress = _a.onPress, title = _a.title, children = _a.children, titleProps = _a.titleProps, disabled = _a.disabled, showPreloader = _a.showPreloader, throttleTime = _a.throttleTime, titleClassName = _a.titleClassName, forceShowPreloader = _a.forceShowPreloader, p = __rest(_a, ["buttonTheme", "className", "onPress", "title", "children", "titleProps", "disabled", "showPreloader", "throttleTime", "titleClassName", "forceShowPreloader"]);
     var _c = (0, react_1.useState)(false), isBlocked = _c[0], setBlocked = _c[1];
@@ -109,5 +110,5 @@ function Button(_a) {
                     'text-white': buttonTheme === button_options_1.ButtonTheme.BASE,
                     'text-black': buttonTheme === button_options_1.ButtonTheme.BORDERED || buttonTheme === button_options_1.ButtonTheme.EMPTY,
                 }, titleClassName) }, titleProps, { children: title }))) : (children)] })));
-}
-exports.default = Button;
+};
+exports.Button = Button;

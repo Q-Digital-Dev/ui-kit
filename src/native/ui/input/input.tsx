@@ -98,5 +98,3 @@ export const Input = forwardRef<InputRef, InputP>(function Input(
     </View>
   )
 })
-
-export default Input

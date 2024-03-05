@@ -61,12 +61,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Button = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var preloader_1 = __importDefault(require("./ui/preloader"));
 var title_1 = __importDefault(require("./ui/title"));
 var classnames_1 = __importDefault(require("classnames"));
-function default_1(_a) {
+var Button = function (_a) {
     var _this = this;
     var onClick = _a.onClick, children = _a.children, throttleTime = _a.throttleTime, showPreloader = _a.showPreloader, title = _a.title, colorPreloader = _a.colorPreloader, titleClassName = _a.titleClassName, className = _a.className, titleProps = _a.titleProps, disabled = _a.disabled, p = __rest(_a, ["onClick", "children", "throttleTime", "showPreloader", "title", "colorPreloader", "titleClassName", "className", "titleProps", "disabled"]);
     var _b = (0, react_1.useState)(false), isBlocked = _b[0], setBlocked = _b[1];
@@ -103,5 +104,5 @@ function default_1(_a) {
     return ((0, jsx_runtime_1.jsx)("div", __assign({ className: (0, classnames_1.default)('py-2 px-4 bg-red-500 rounded flex-row flex cursor-pointer', className, {
             'opacity-80': isBlocked || disabled
         }) }, p, { onClick: onClickHandler, children: (0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(preloader_1.default, { isBlocked: isBlocked, showPreloader: showPreloader, colorPreloader: colorPreloader }), title ? ((0, jsx_runtime_1.jsx)(title_1.default, __assign({ titleClassName: titleClassName }, titleProps, { title: title }))) : children] }) })));
-}
-exports.default = default_1;
+};
+exports.Button = Button;

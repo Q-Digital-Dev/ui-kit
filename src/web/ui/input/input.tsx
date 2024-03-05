@@ -81,5 +81,3 @@ export const Input = forwardRef<InputRef, InputP>(function Input({
     </div>
   )
 })
-
-export default Input

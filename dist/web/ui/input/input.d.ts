@@ -21,4 +21,3 @@ export declare const Input: React.ForwardRefExoticComponent<{
     setClearState(state: boolean): void;
     onChangeText?(text: string): void;
 } & React.ClassAttributes<HTMLInputElement> & React.InputHTMLAttributes<HTMLInputElement>), "clearButtonMode" | "setClearState"> & React.RefAttributes<InputRef>>;
-export default Input;

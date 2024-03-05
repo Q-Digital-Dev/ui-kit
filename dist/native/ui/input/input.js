@@ -25,6 +25,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Input = void 0;
 var jsx_runtime_1 = require("react/jsx-runtime");
 var react_1 = require("react");
 var react_native_1 = require("react-native");
@@ -34,7 +35,7 @@ var input_legacy_1 = __importDefault(require("./ui/input.legacy"));
 var input_mask_1 = __importDefault(require("./ui/input.mask"));
 var closedEye_svg_1 = __importDefault(require("./assets/closedEye.svg"));
 var openedEye_svg_1 = __importDefault(require("./assets/openedEye.svg"));
-exports.default = (0, react_1.forwardRef)(function Input(_a, ref) {
+exports.Input = (0, react_1.forwardRef)(function Input(_a, ref) {
     var label = _a.label, error = _a.error, placeholderTextColor = _a.placeholderTextColor, inputContainerStyle = _a.inputContainerStyle, inputContainerClassName = _a.inputContainerClassName, containerStyle = _a.containerStyle, containerClassName = _a.containerClassName, leftElement = _a.leftElement, rightElement = _a.rightElement, isShowClear = _a.isShowClear, isPassword = _a.isPassword, p = __rest(_a, ["label", "error", "placeholderTextColor", "inputContainerStyle", "inputContainerClassName", "containerStyle", "containerClassName", "leftElement", "rightElement", "isShowClear", "isPassword"]);
     var inputRef = (0, react_1.useRef)(null);
     var _b = (0, react_1.useState)(false), clearState = _b[0], setClearState = _b[1];

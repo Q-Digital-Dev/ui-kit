@@ -59,5 +59,3 @@ export const Button = function ({ onClick, children, throttleTime, showPreloader
     </div>
   )
 }
-
-export default Button

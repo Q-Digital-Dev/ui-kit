@@ -1,6 +1,6 @@
 import React from 'react';
 import { InputRef } from './input.options';
-declare const _default: React.ForwardRefExoticComponent<{
+export declare const Input: React.ForwardRefExoticComponent<{
     label?: string | undefined;
     error?: string | undefined;
     leftElement?: React.ReactNode;
@@ -23,4 +23,3 @@ declare const _default: React.ForwardRefExoticComponent<{
     setClearState(state: boolean): void;
     onChangeText?(text: string): void;
 } & Omit<import("react-native").TextInputProps, "value" | "onChangeText">), "clearButtonMode" | "setClearState"> & React.RefAttributes<InputRef>>;
-export default _default;

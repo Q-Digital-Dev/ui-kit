@@ -46,4 +46,3 @@ exports.Input = (0, react_1.forwardRef)(function Input(_a, ref) {
                                     (_a = inputRef.current) === null || _a === void 0 ? void 0 : _a.change('');
                                 }, children: (0, jsx_runtime_1.jsxs)("svg", { width: "17", height: "17", viewBox: "0 0 17 17", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [(0, jsx_runtime_1.jsx)("path", { d: "M8.5 16.5C12.9183 16.5 16.5 12.9183 16.5 8.5C16.5 4.08172 12.9183 0.5 8.5 0.5C4.08172 0.5 0.5 4.08172 0.5 8.5C0.5 12.9183 4.08172 16.5 8.5 16.5Z", stroke: "black", "stroke-linecap": "round", "stroke-linejoin": "round" }), (0, jsx_runtime_1.jsx)("path", { d: "M5.5 5.5L11.5 11.5M11.5 5.5L5.5 11.5", stroke: "black", "stroke-linecap": "round", "stroke-linejoin": "round" })] }) })), rightElement] })] }), error && (0, jsx_runtime_1.jsx)("div", { className: "text-red-500 mt-1 text-sm", children: error })] }));
 });
-exports.default = exports.Input;
