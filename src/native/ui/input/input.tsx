@@ -14,7 +14,7 @@ import InputMask from './ui/input.mask'
 import ClosedEye from './assets/closedEye.svg'
 import OpenedEye from './assets/openedEye.svg'
 
-export default forwardRef<InputRef, InputP>(function Input(
+export const Input = forwardRef<InputRef, InputP>(function Input(
   {
     label,
     error,
@@ -98,3 +98,5 @@ export default forwardRef<InputRef, InputP>(function Input(
     </View>
   )
 })
+
+export default Input

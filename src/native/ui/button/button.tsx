@@ -3,7 +3,7 @@ import { ButtonP, ButtonTheme } from './button.options'
 import { ActivityIndicator, Text, TouchableOpacity, View } from 'react-native'
 import classNames from 'classnames'
 
-export default function Button({
+export const Button = function ({
   buttonTheme = ButtonTheme.BASE,
   className,
   onPress,
@@ -89,3 +89,5 @@ export default function Button({
     </TouchableOpacity>
   )
 }
+
+export default Button

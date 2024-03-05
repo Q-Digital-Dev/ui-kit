@@ -4,7 +4,7 @@ import Preloader from './ui/preloader'
 import Title from './ui/title'
 import classNames from 'classnames'
 
-export default function ({ onClick, children, throttleTime, showPreloader, title, colorPreloader, titleClassName, className, titleProps, disabled, ...p }: ButtonP) {
+export const Button = function ({ onClick, children, throttleTime, showPreloader, title, colorPreloader, titleClassName, className, titleProps, disabled, ...p }: ButtonP) {
   const [isBlocked, setBlocked] = useState(false)
   const throttleRef = useRef<NodeJS.Timeout>()
 
@@ -59,3 +59,5 @@ export default function ({ onClick, children, throttleTime, showPreloader, title
     </div>
   )
 }
+
+export default Button
