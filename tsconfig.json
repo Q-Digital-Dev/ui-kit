@@ -26,6 +26,7 @@
     "**/*.tsx",
     "**/*.jsx",
     "**/*.svg",
+    "**/*.png",
     "app.d.ts"
   ],
   "exclude": [
