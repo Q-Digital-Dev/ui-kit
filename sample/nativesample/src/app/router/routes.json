@@ -1,0 +1,8 @@
+{
+  "launchScreen": "/",
+  "modals": {
+    "alert": "modals/alert",
+    "bottomSheet": "modals/bottomSheet",
+    "popupMenu": "modals/popupMenu"
+  }
+}

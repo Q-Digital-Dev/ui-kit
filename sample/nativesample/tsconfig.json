@@ -1,0 +1,13 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~popupMenu": ["./src/pages/modals/popupMenu/popupMenu.page.options.ts"],
+      "~bottomSheet": ["./src/pages/modals/bottomSheet/bottomSheet.page.options.ts"],
+      "~dialog": ["src/pages/modals/alert/alert.page.options.ts"],
+      "~routes": ["src/app/router/routes.json"],
+      "~*": ["./src/*"]
+    }
+  }
+}
