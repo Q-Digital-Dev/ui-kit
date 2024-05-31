@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "sample/websample"
+		},
+		{
+			"path": "sample/nativesample"
+		}
+	]
+}
